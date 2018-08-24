@@ -44,7 +44,14 @@ body
 	padding: 8px 16px;
 	font-size: 25px : 
 }
-
+.men
+{
+	border-bottom: 2px solid black;
+}
+.men:hover
+{
+	background-color: grey;
+}
 .mens_outerwear
 {
 	margin-top: 50px;
@@ -52,44 +59,24 @@ body
 	width: 100%;
 	object-fit: cover;
 }
-.ladies_outerwear
+.images
 {
-	display: relative;
-	width: 100%;
-	object-fit: cover;
-	margin-top: 20px;
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
-.wear
+.pic
 {
-	margin-top: 20px;
-	font-size: 40px;
-	margin-bottom: 40px;
+	padding: 20px;
+	box-sizing: border-box;
 }
-.outerwear_tab
+.cost
 {
-	font-size: 16px;
-	text-align: center;
-	text-decoration: none;
-	color: black;
-	padding: 10px 20px;
-	border: 2px solid black;
+	color: grey;
 }
-.tshirt
+.description
 {
-	margin-top: 20px;
-	display: flex;
-	width: 100%;
-	height:100%;
-	margin-bottom: 160px;
+	margin-top: 60px;
 }
-.shirt
-{
-	margin-top: 20px;
-	object-fit: cover;
-	width: 100%;
-	height: 100% ;
-}
-
 .foot
 {
 	text-decoration: none;
