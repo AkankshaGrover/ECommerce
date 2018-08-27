@@ -1,0 +1,177 @@
+body
+{
+	margin:2px;
+	font-family:'Roboto', 'Noto', sans-serif;
+	font-size:13px;
+	line-height:1.5;
+	min-height:100vh;
+	text-decoration: none;
+}
+
+	.top
+	{
+		margin-top: 20px;
+		display: flex;
+		font-size: 17px;
+		width:95%;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+	.arrow
+	{
+		color:black;
+	}
+	.heading
+	{
+		text-decoration: none;
+		color: black;
+	}
+	.navbar
+	{
+		display: flex;
+		position: absolute;
+		background-color: white;
+		opacity: 0.75;
+		width:95%;
+		text-align: center;
+		justify-content: center;
+		align-content: center;
+		margin-top: 10px; 
+	}
+	.menu
+	{
+		text-decoration: none;
+		color: black;
+		padding: 8px 16px;
+		font-size: 25px : 
+	}
+	.women
+	{
+		border-bottom: 2px solid black;
+	}
+	.women:hover
+	{
+		background-color: grey;
+	}
+	.desc
+	{
+		margin-top: 100px;
+		/*display: flex;
+		flex-wrap: nowrap;*/
+		display: grid;
+		grid-template-columns: 60% 40%;
+		width:90%;
+	}
+	.image
+	{
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.info
+	{
+		padding: 20px;
+		width:100%;
+		height:100%;
+	}
+	.pic
+	{
+		height: 80%;
+		width: 80%;
+	}
+	.item
+	{
+		text-align: left;
+		font-size: 25px;
+	}
+	.cost
+	{
+		color: grey;
+		font-size: 17px;
+		margin-top: 5px;
+		margin-bottom: 40px;
+	}
+	.options
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		width:80%;
+		border-top: 1px solid grey;
+		padding: 0;
+	}
+	.size
+	{
+		padding: 10px;
+		width:50%;
+		color: grey;
+	}
+	.list
+	{
+		outline:none;
+		border:none;
+		width: 300%;
+		background-color: white;
+		font-size: 18px;
+	}
+	.tab
+	{
+		margin-top: 40px;
+	}
+	.outerwear_tab
+	{
+		font-size: 16px;
+		text-align: center;
+		text-decoration: none;
+		color: black;
+		padding: 1% 4%;
+		border: 2px solid black;
+	}
+	.desc2
+	{
+		color: grey;
+		font-size: 13px;
+	}
+	.foot
+	{
+		text-decoration: none;
+		color: grey;
+		font-size: 13px;
+	}
+	.foot2
+	{
+		margin-top: 10px;
+		box-sizing: border-box;
+		width:120px;
+		margin: 8px auto black;
+		text-align: center;
+		background-color: black;
+		padding: 10px;
+		color:white;
+	}
+
+@media screen and (max-width: 704px) 
+{
+
+	.desc
+	{
+		margin-top: 100px;
+		/*display: grid;
+		grid-template-columns: 60% 40%;*/
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.info
+	{
+		padding: 20px;
+		width:100%;
+	}
+	.pic
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.desc2
+	{
+		color: grey;
+		font-size: 18px;
+	}
+}

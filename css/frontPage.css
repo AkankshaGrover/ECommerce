@@ -14,11 +14,11 @@ body
 	font-size: 17px;
 	width:95%;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 .bar
 {
-	visibility:hidden;
+	visibility: hidden;
 }
 .heading
 {
@@ -28,10 +28,10 @@ body
 .navbar
 {
 	display: flex;
-	position: fixed;
+	position: absolute;
 	background-color: white;
 	opacity: 0.75;
-	width:100%;
+	width:98%;
 	text-align: center;
 	justify-content: center;
 	align-content: center;
@@ -47,17 +47,31 @@ body
 
 .mens_outerwear
 {
-	margin-top: 50px;
-	display:relative;
-	width: 100%;
+	margin-top: 80px;
+	display:block;
+	height: 300px;
+}
+.mens_outerwear img{
+
 	object-fit: cover;
+	object-position: center;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+
 }
 .ladies_outerwear
 {
-	display: relative;
-	width: 100%;
-	object-fit: cover;
 	margin-top: 20px;
+	display: block;
+	height: 300px;
+}
+.ladies_outerwear img{
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
 }
 .wear
 {
@@ -85,9 +99,15 @@ body
 .shirt
 {
 	margin-top: 20px;
-	object-fit: cover;
 	width: 100%;
 	height: 100% ;
+}
+.shirt img{
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
 }
 
 .foot
@@ -106,4 +126,21 @@ body
 	background-color: black;
 	padding: 10px;
 	color:white;
+}
+@media only screen and (max-width: 770px)
+{
+	/*.navbar
+	{
+		display:none;
+	}
+	.bar
+	{
+		visibility: visible;
+	}*/
+	.mens_outerwear
+	{
+		margin-top: 70px;
+		display:block;
+		height: 300px;
+	}
 }

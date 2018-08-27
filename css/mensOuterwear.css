@@ -4,7 +4,7 @@ body
 	font-family:'Roboto', 'Noto', sans-serif;
 	font-size:13px;
 	line-height:1.5;
-	min-height:100vh;
+	//min-height:100vh;
 	text-decoration: none;
 }
 .top
@@ -12,9 +12,9 @@ body
 	margin-top: 20px;
 	display: flex;
 	font-size: 17px;
-	width:95%;
+	width: 95%;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 .bar
 {
@@ -28,10 +28,10 @@ body
 .navbar
 {
 	display: flex;
-	position: fixed;
+	position: absolute;
 	background-color: white;
 	opacity: 0.75;
-	width:100%;
+	width:95%;
 	text-align: center;
 	justify-content: center;
 	align-content: center;
@@ -54,28 +54,51 @@ body
 }
 .mens_outerwear
 {
-	margin-top: 50px;
-	display:relative;
-	width: 100%;
+	margin-top: 7%;
+	display:block;
+	height: 300px;
+}
+.mens_outerwear img
+{
 	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 .images
 {
 	display: grid;
 	grid-template-columns: auto auto auto;
+	height: 100%;
+	width: 100%;
+	margin-top: 2%; 
 }
 .pic
 {
 	padding: 20px;
 	box-sizing: border-box;
+	width:100%;
+	height:100%;
+}
+.picture
+{
+	width:100%;
+	height:100%;
 }
 .cost
 {
 	color: grey;
+	font-size: 10%;
 }
 .description
 {
 	margin-top: 60px;
+	font-size: 10%;
+}
+footer
+{
+	width: 99%;
 }
 .foot
 {
@@ -93,4 +116,38 @@ body
 	background-color: black;
 	padding: 10px;
 	color:white;
+}
+
+@media screen and (max-width: 784px)
+{
+	.bar
+	{
+		visibility: visible;
+	}
+	.images
+	{
+		display: grid;
+		position: relative;
+		grid-template-columns: auto auto;
+		margin-top: 10px;
+	}
+	.pic
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.navbar
+	{
+		visibility:hidden;
+	}
+	.mens_outerwear
+	{
+		display:none;
+		//visibility: hidden;
+		margin:0;
+	}
+	.up
+	{
+		margin-top: 0;
+	}
 }

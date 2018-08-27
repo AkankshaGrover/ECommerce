@@ -14,7 +14,7 @@ body
 	font-size: 17px;
 	width:95%;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 .bar
 {
@@ -28,10 +28,10 @@ body
 .navbar
 {
 	display: flex;
-	position: fixed;
+	position: absolute;
 	background-color: white;
 	opacity: 0.75;
-	width:100%;
+	width:95%;
 	text-align: center;
 	justify-content: center;
 	align-content: center;
@@ -54,20 +54,38 @@ body
 }
 .ladies_outerwear
 {
-	display: relative;
+	display: block;
 	width: 100%;
+	height:300px;
+	margin-top: 7%;
+}
+.ladies_outerwear img
+{
 	object-fit: cover;
-	margin-top: 50px;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 .images
 {
 	display: grid;
 	grid-template-columns: auto auto auto;
+	height: 100%;
+	width: 100%;
+	margin-top: 2%; 
 }
 .pic
 {
 	padding: 20px;
 	box-sizing: border-box;
+	width:100%;
+	height:100%;
+}
+.picture
+{
+	width:100%;
+	height:100%;
 }
 .item
 {
@@ -81,6 +99,10 @@ body
 .description
 {
 	margin-top: 60px;
+}
+footer
+{
+	width: 99%;
 }
 .foot
 {
@@ -98,4 +120,33 @@ body
 	background-color: black;
 	padding: 10px;
 	color:white;
+}
+@media screen and (max-width: 784px)
+{
+	.bar
+	{
+		visibility: visible;
+	}
+	.images
+	{
+		display: grid;
+		position: relative;
+		grid-template-columns: auto auto;
+		margin-top: 10px;
+	}
+	.pic
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.navbar
+	{
+		visibility:hidden;
+	}
+	.ladies_outerwear
+	{
+		display:none;
+		//visibility: hidden;
+		margin:0;
+	}
 }

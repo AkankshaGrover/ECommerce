@@ -1,0 +1,230 @@
+body
+{
+	margin:2px;
+	font-family:'Roboto', 'Noto', sans-serif;
+	font-size:13px;
+	line-height:1.5;
+	min-height:100vh;
+	text-decoration: none;
+}
+.top
+{
+	margin-top: 20px;
+	display: flex;
+	font-size: 17px;
+	width:99%;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.bar
+{
+	visibility:hidden;
+}
+.heading
+{
+	text-decoration: none;
+	color: black;
+}
+.name
+{
+	font-size: 18px;
+	margin-top: 7%;
+}
+.number
+{
+	color: grey;
+	font-size: 15px;
+}
+.cart
+{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	width:80%;
+	margin-top: 5%;
+	margin-bottom: 1% ;
+	margin-left: 10%;
+	margin-right: 2%;
+	padding: 1% 2%;
+	justify-content: center;
+	align-content: center;
+}
+.div1
+{
+	display:grid;
+	grid-template-columns: 20% 70%;
+	width:100%;
+	justify-content: center;
+	align-content: center;
+}
+.div2
+{
+	display:grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	width:100%;
+	color:grey;
+	font-size: 15px;
+}
+/*.image
+{
+	display:grid;
+	grid-template-columns: auto auto;
+}*/
+.pic
+{
+	height:70%;
+	width:70%;
+}
+.line
+{
+	color:black;
+	text-decoration: none;
+}
+.quant
+{
+	font-size: 15px;
+	outline: none;
+	border:none;
+	background-color: white;
+	width: 30%;
+}
+.link
+{
+	text-decoration: none;
+	color: grey;
+}
+.tab
+{
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	padding: 10px 40px;
+	border: 2px solid black;
+}
+.checkout
+{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width:80%;
+	margin-left: 10%;
+	padding: 0 2%;
+}
+.out
+{
+	display: grid;
+	grid-template-columns: 30% 20% 50%;
+}
+
+footer
+{
+	position:absolute;
+   bottom:0;
+   width:99%;
+   height:60px;  
+}
+.foot
+{
+	display: block;
+	margin-top: 100px;
+	text-decoration: none;
+	color: grey;
+	font-size: 13px;
+}
+.foot2
+{
+	display: block;
+	margin-top: 10px;
+	box-sizing: border-box;
+	width:120px;
+	margin: 8px auto black;
+	text-align: center;
+	background-color: black;
+	padding: 10px;
+	color:white;
+}
+.last
+{
+	display:none;
+}
+.cart2
+{
+	display:none;
+}
+@media only screen and (max-width: 768px)
+{
+	.bar
+	{
+		visibility:visible;
+	}
+	.cart
+	{
+		display: none;
+	}
+	.quant
+	{
+		font-size: 15px;
+		outline: none;
+		border:none;
+		background-color: white;
+		width: 20%;
+	}
+	.cart2
+	{
+		display:grid;
+		grid-template-columns: 30% 60% 10%;
+		width:95%;
+		margin: 5% 1%;
+		margin-left: 1%;
+		padding: 1% 2%;
+		justify-content: center;
+		align-content: center;
+	}
+	.link
+	{
+		text-decoration: none;
+		color: grey;
+		overflow: hidden;
+	}
+	.cross
+	{
+		padding-top: 30px;
+	}
+	.pic
+	{
+		height:70px;
+		width:80px;
+	}
+	.footer
+	{
+		display:none;
+	}
+	.foot
+	{
+		display:none;
+	}
+	.foot2
+	{
+		display: none;
+	}
+	.tab
+	{
+		display:none;
+	}
+
+	.last
+	{
+		display:block;
+		position: fixed;
+		bottom:0;
+		color: white;
+		background-color:blue;
+		width:99%;
+		height:6%;
+		padding: 3.5% 3.5% ;
+		//margin-top:100%;
+		text-align: center;
+		font-size: 15px;
+		text-decoration:none;
+	}
+
+}
