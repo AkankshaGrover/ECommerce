@@ -147,6 +147,10 @@ body
 		padding: 10px;
 		color:white;
 	}
+	.last
+	{
+		display:none;
+	}
 
 @media screen and (max-width: 704px) 
 {
@@ -158,6 +162,7 @@ body
 		grid-template-columns: 60% 40%;*/
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 10px; 
 	}
 	.info
 	{
@@ -172,6 +177,33 @@ body
 	.desc2
 	{
 		color: grey;
-		font-size: 18px;
+		font-size: 14px;
+	}
+	.foot
+	{
+		display:none;
+	}
+	.foot2
+	{
+		display: none;
+	}
+	.tab
+	{
+		display:none;
+	}
+	.last
+	{
+		display:block;
+		position: fixed;
+		bottom:0;
+		color: white;
+		background-color:blue;
+		width:99%;
+		height:4%;
+		padding: 3.5% 3.5% ;
+		//margin-top:1%;
+		text-align: center;
+		font-size: 15px;
+		text-decoration:none;
 	}
 }
