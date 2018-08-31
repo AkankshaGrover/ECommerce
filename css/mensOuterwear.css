@@ -80,21 +80,29 @@ body
 	box-sizing: border-box;
 	width:100%;
 	height:100%;
+	color: grey;
 }
 .picture
 {
 	width:100%;
-	height:100%;
+	height:70%;
 }
 .cost
 {
 	color: grey;
-	font-size: 10%;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
 }
 .description
 {
 	margin-top: 60px;
-	font-size: 10%;
+	font-weight: bold;
+	text-align: center;
+	/*font-size: 100%;
+	font-weight: bold;
+	text-align: center;*/
+	//color: grey;
 }
 footer
 {

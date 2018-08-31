@@ -49,6 +49,7 @@ body
 {
 	margin-top: 80px;
 	display:block;
+	//position: relative;
 	height: 300px;
 }
 .mens_outerwear img{
@@ -64,6 +65,7 @@ body
 {
 	margin-top: 20px;
 	display: block;
+	position: relative;
 	height: 300px;
 }
 .ladies_outerwear img{

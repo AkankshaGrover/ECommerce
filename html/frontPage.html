@@ -2,55 +2,57 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-	<link rel="stylesheet" href="/home/dev/ecommerce-akanksha/css/frontPage.css">
+	<link rel="stylesheet" href="../css/frontPage.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../js/frontPage.js"></script>
+	<script type="text/javascript" src="../json/frontPage.json"></script>
 </head>
-<body>
+<body onload="fn()">
 	<div class="top">
 		<div class="bar">
 			<i class="fa fa-bars" ></i>
 		</div>
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/frontPage.html" class="heading"><b> S H O P </b></a>
+			<a href="../html/frontPage.html" class="heading"><b> S H O P </b></a>
 		</div>
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/cart.html" class="heading"><i class="fa fa-shopping-cart"></i></a>
+			<a href="../html/cart.html" class="heading"><i class="fa fa-shopping-cart"></i></a>
 		</div>
 	</div>
 	<center>
 	<div class="navbar">		
-		<a class="menu" href="/home/dev/ecommerce-akanksha/html/mensOuterwear.html"> Men's Outerwear</a>
-		<a class="menu" href="/home/dev/ecommerce-akanksha/html/womenOuterwear.html"> Ladies Outerwear</a>
-		<a class="menu" href="/home/dev/ecommerce-akanksha/html/menTshirt.html"> Men's Tshirt</a>
-		<a class="menu" href="/home/dev/ecommerce-akanksha/html/womenTshirt.html"> Ladies Tshirt</a>
+		<a class="menu" href="../html/mensOuterwear.html"> Men's Outerwear</a>
+		<a class="menu" href="../html/womenOuterwear.html"> Ladies Outerwear</a>
+		<a class="menu" href="../html/menTshirt.html"> Men's Tshirt</a>
+		<a class="menu" href="../html/womenTshirt.html"> Ladies Tshirt</a>
 	</div>
 	</center>
-	<div class="outerwear">
-		<a href="/home/dev/ecommerce-akanksha/html/mensOuterwear.html" alt="mens_outerwear" class="mens_outerwear">
-			<img src="/home/dev/ecommerce-akanksha/image/mens_outerwear.jpg" >
+	<div class="outerwear" id="outerwear" >
+		<a href="../html/mensOuterwear.html" alt="mens_outerwear" class="mens_outerwear">
+			<img src="../image/mens_outerwear.jpg" >
 		</a>
-		<p class="wear"><center>Men's Outerwear</center></p>
+		<p class="wear" id="men"><center>Men's Outerwear</center></p>
 		<center>
-			<a href="/home/dev/ecommerce-akanksha/html/mensOuterwear.html" class="outerwear_tab">SHOP NOW</a>
+			<a href="../html/mensOuterwear.html" class="outerwear_tab">SHOP NOW</a>
 		</center>
-		<a href="/home/dev/ecommerce-akanksha/html/womenOuterwear.html" alt="ladies_outerwear" class="ladies_outerwear">
-			<img src="/home/dev/ecommerce-akanksha/image/ladies_outerwear.jpg" >
+		<a href="../html/womenOuterwear.html" alt="ladies_outerwear" class="ladies_outerwear">
+			<img src="../image/ladies_outerwear.jpg" >
 		</a>
-		<p class="wear"><center>Ladies Outerwear</center></p><br>
+		<p class="wear" id="ladies"><center>Ladies Outerwear</center></p><br>
 		<center>
-			<a href ="/home/dev/ecommerce-akanksha/html/womenOuterwear.html" class="outerwear_tab">SHOP NOW</a>
+			<a href ="../html/womenOuterwear.html" class="outerwear_tab">SHOP NOW</a>
 		</center>
 	</div>
 	<div class="tshirt">
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/menTshirt.html" alt="mens_tshirt" class="shirt"><img src="/home/dev/ecommerce-akanksha/image/mens_tshirts.jpg"></a>
+			<a href="../html/menTshirt.html" alt="mens_tshirt" class="shirt"><img src="../image/mens_tshirts.jpg"></a>
 			<p class="wear"><center>Men's T-Shirts</center></p>
-			<center><a href ="/home/dev/ecommerce-akanksha/html/menTshirt.html" class="outerwear_tab">SHOP NOW</a></center>
+			<center><a href ="../html/menTshirt.html" class="outerwear_tab">SHOP NOW</a></center>
 		</div>
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/womenTshirt.html" alt="ladies_tshirt"  class="shirt"><img src="/home/dev/ecommerce-akanksha/image/ladies_tshirts.jpg"></a>
+			<a href="../html/womenTshirt.html" alt="ladies_tshirt"  class="shirt"><img src="../image/ladies_tshirts.jpg"></a>
 			<p class="wear"><center>Ladies T-Shirts</center></p>
-			<center><a href ="/home/dev/ecommerce-akanksha/html/womenTshirt.html" class="outerwear_tab">SHOP NOW</a></center>
+			<center><a href ="../html/womenTshirt.html" class="outerwear_tab">SHOP NOW</a></center>
 		</div>
 	</div>
 	<div>

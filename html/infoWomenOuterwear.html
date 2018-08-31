@@ -2,38 +2,40 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-	<link rel="stylesheet" href="/home/dev/ecommerce-akanksha/css/infoWomenOuterwear.css">
+	<link rel="stylesheet" href="../css/infoWomenOuterwear.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../json/infoWomenOuterwear.json"></script>
+	<script type="text/javascript" src="../js/infoWomenOuterwear.js"></script>
 </head>
-<body>
+<body onload="fun()">
 	<div class="top">
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/womenOuterwear.html" class="arrow" ><i class="fa fa-arrow-left"></i></a>
+			<a href="../html/womenOuterwear.html" class="arrow" ><i class="fa fa-arrow-left"></i></a>
 		</div>
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/frontPage.html" class="heading"><b> S H O P </b></a>
+			<a href="../html/frontPage.html" class="heading"><b> S H O P </b></a>
 		</div>
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/cart.html" class="heading"><i class="fa fa-shopping-cart"></i></a>
+			<a href="../html/cart.html" class="heading"><i class="fa fa-shopping-cart"></i></a>
 		</div>
 	</div>
 	<center>
 	<div class="navbar">		
-		<a class="menu" href="/home/dev/ecommerce-akanksha/html/mensOuterwear.html"> Men's Outerwear</a>
-		<a class="menu women" href="/home/dev/ecommerce-akanksha/html/womenOuterwear.html"> Ladies Outerwear</a>
-		<a class="menu" href="/home/dev/ecommerce-akanksha/html/menTshirt.html"> Men's Tshirt</a>
-		<a class="menu" href="/home/dev/ecommerce-akanksha/html/womenTshirt.html"> Ladies Tshirt</a>
+		<a class="menu" href="../html/mensOuterwear.html"> Men's Outerwear</a>
+		<a class="menu women" href="../html/womenOuterwear.html"> Ladies Outerwear</a>
+		<a class="menu" href="../html/menTshirt.html"> Men's Tshirt</a>
+		<a class="menu" href="../html/womenTshirt.html"> Ladies Tshirt</a>
 	</div>
 	</center>
-	<div class="desc">
-		<div class="image">
-			<center><img src="/home/dev/ecommerce-akanksha/image/infoWomenOuterwear.jpg" class="pic"></center>
-		</div>
-		<div class="info">
-			<div>
+	<div class="desc" id="desc">
+		<!--<div class="image">
+			<img src="../image/infoWomenOuterwear.jpg" class="pic">
+		</div>-->
+		<div class="info" id="info">
+			<!--<div>
 				<p class="item"> Ladies Yerba Knit Quarter Zip</p>
 				<p class="cost">$64.20</p>
-			</div>
+			</div>-->
 	
 			<div class="options">
 				<p class="size"> Size </p>  
@@ -56,7 +58,7 @@
 					  <option value="6">5</option>
 				</select>
 			</div>
-			<div>
+			<!--<div>
 				<b>Description</b>
 				<p class="desc2">This on-trend quarter zip doubles as workout gear. </p>
 				<p class="desc2">Features:</p>
@@ -68,10 +70,8 @@
 					  <li>Available in heathered indigo with the white Google logo heat transferred vertically onto front right hip.</li>
 					</ul>  
 				</p>
-			</div>
-			<div class="tab">
-				<a href ="/home/dev/ecommerce-akanksha/html/cart.html" class="outerwear_tab">ADD TO CART</a> 
-			</div>
+			</div>-->
+			<button onclick="send()" class="outerwear_tab" id="outerwear_tab">ADD TO CART</button>
 		</div>
 	</div>
 
@@ -80,7 +80,7 @@
 		<center><p class="foot2">DEMO ONLY </p></center>
 	</div>
 	<div>
-		<a href="/home/dev/ecommerce-akanksha/html/checkout.html" class="last"> CHECKOUT</a>
+		<a href="../html/checkout.html" class="last"> CHECKOUT</a>
 	</div>
 </body>
 </html>

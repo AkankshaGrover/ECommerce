@@ -43,13 +43,20 @@ body
 	justify-content: center;
 	margin:1% 2% ;
 }
+.user-input-wrp
+{
+	position: relative;
+	margin-left:0;
+	padding-bottom: 1%;
+}
 .a
 {
 	border:none;
 	outline:none;
 	border-bottom: 1px solid grey;
 	font-size: 18px;
-	margin: 20px;
+	opacity: 0.75;
+	margin: 20px;    
 	width: 100%;
 	background-color: white;
 	margin-left:0;
@@ -61,7 +68,7 @@ body
 	border-bottom: 1px solid grey;
 	font-size: 15px;
 	margin: 20px;
-	width: 43%;
+	width: 40%;
 	margin-left:0;
 }
 .c
@@ -74,6 +81,36 @@ body
 	width: 26%;
 	background-color: white;
 	margin-left:0;
+}
+.floating-label
+{
+	font-size: 18px;
+	opacity: 0.75;
+	color: grey;
+
+}
+.user-input-wrp .a:invalid
+{
+	box-shadow: none !important;
+}
+.user-input-wrp .a:focus
+{
+	border-color: black;
+	border-bottom: 1px solid black;
+}
+.user-input-wrp .floating-label {
+	position: relative;
+	pointer-events: none;
+	top:-50px;
+	-webkit-transition: width 3s;//: 2s ease out;
+}
+
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:focus):valid ~ .floating-label{
+	top: -70px;
+	font-size: 13px;
+	opacity: 1;
+	color: black;
 }
 .forms
 {

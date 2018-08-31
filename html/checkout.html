@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-	<link rel="stylesheet" href="/home/dev/ecommerce-akanksha/css/checkout.css">
+	<link rel="stylesheet" href="../css/checkout.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -11,10 +11,10 @@
 			<i class="fa fa-bars" ></i>
 		</div>
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/frontPage.html" class="heading"><b> S H O P </b></a>
+			<a href="../html/frontPage.html" class="heading"><b> S H O P </b></a>
 		</div>
 		<div>
-			<a href="/home/dev/ecommerce-akanksha/html/cart.html" class="heading"><i class="fa fa-shopping-cart"></i></a>
+			<a href="../html/cart.html" class="heading"><i class="fa fa-shopping-cart"></i></a>
 		</div>
 	</div>
 	<center class="out">Checkout</center>
@@ -22,27 +22,36 @@
 	<div class="info">
 		<div class="forms">
 			<form>
-				<b>Account Information</b><br>
-				<input class="a" type="text" placeholder="Email" required><br>
-				<input class="a" type="text" placeholder="Phone Number" required><br>
-				<b>  Shipping Address</b><br>
-				<input class="a" type="text" placeholder="Address" required><br>
-				<input class="a" type="text" placeholder="City" required><br>
-				<input class="b" type="text" placeholder="State/Province" required>
-				<input class="b" type="text" placeholder="ZIP/Postal Code" required><br>
-				<input class="a" type="text" placeholder="Email" required><br>
-				  Country<br>
-				<select class="a" name="country">
-					<option value="United States">United States</option>
-					<option value="Canada">Canada</option>
-					<option value="India">India</option>
-				</select> <br>
-				<b>  Billing Address</b><br><br><br>
-				<input type="checkbox">Use Different Billing Address<br>
+				<div class="user-input-wrp">
+					<b>Account Information</b><br><br>
+					<input class="a" type="text" required><br>
+					<label class="floating-label">Email</label>				
+					<input class="a" type="text" required>
+					<label class="floating-label">Phone Number</label><br>
+					
+					<b>  Shipping Address</b><br><br>
+					<input class="a" type="text" required>
+					<label class="floating-label">Address </label><br>
+					<input class="a" type="text" required> 
+					<label class="floating-label">City </label><br>
+					<input class="b" type="text" required>
+					<label class="floating-label">State/Province </label>
+					<input class="b" type="text" required>
+					<label class="floating-label">ZIP/Postal Code</label><br>
+					<input class="a" type="text" placeholder="Email" required><br>
+					  Country<br>
+					<select class="a" name="country">
+						<option value="United States">United States</option>
+						<option value="Canada">Canada</option>
+						<option value="India">India</option>
+					</select> <br>
+					<b>  Billing Address</b><br><br><br>
+					<input type="checkbox">Use Different Billing Address<br>
+				</div>
 			</form>
 		</div>
 		<div class="forms">
-			<form>
+			<form class="user-input">
 				<b>Payment Method</b>
 				<input class="a" placeholder="Cardholder name" required><br>
 				<input class="a" placeholder="Card number" required><br>
@@ -84,7 +93,7 @@
 					<td align="right" class="total">$128.40</td>
 				</tr>
 			</table>
-			<a href="/home/dev/ecommerce-akanksha/html/thankU.html" class="outerwear_tab"> PLACE ORDER </a>
+			<a href="../html/thankU.html" class="outerwear_tab"> PLACE ORDER </a>
 		</div>
 	</div>
 	<footer>
@@ -92,7 +101,7 @@
 		<center><p class="foot2">DEMO ONLY </p></center>
 	</footer>
 	<div>
-		<a href="/home/dev/ecommerce-akanksha/html/thankU.html" class="last"> PLACE ORDER</a>
+		<a href="../html/thankU.html" class="last"> PLACE ORDER</a>
 	</div>
 </body>
 </html>
