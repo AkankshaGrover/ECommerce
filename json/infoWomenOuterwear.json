@@ -1,0 +1,22 @@
+var information = [{
+		"id": 1,
+		"image":"../image/infoWomenOuterwear.jpg",
+		"description":"Ladies Yerba Knit Quarter Zip",
+		"cost": "$64.20",	
+		"description": "This on-trend quarter zip doubles as workout gear.",
+	},
+	{
+		"id": 2,
+		"image":"../image/infoWomenOuterwear.jpg",
+		"description":"Ladies Yerba Knit Quarter Zip",
+		"cost": "$64.20",	
+		"description": "This on-trend quarter zip doubles as workout gear.",
+	},
+	{
+		"id": 3,
+		"image":"../image/infoWomenOuterwear.jpg",
+		"description":"Ladies Yerba Knit Quarter Zip",
+		"cost": "$64.20",	
+		"description": "This on-trend quarter zip doubles as workout gear.",
+	}
+]
