@@ -1,7 +1,8 @@
+var noOfIds, source, target ;
 function fetch()
 {
 	var ids = JSON.parse(localStorage.getItem("cartIds"));
-	var noOfIds = ids.length;
+	noOfIds = ids.length;
 	for(var i=0; i<noOfIds; i++)
 	{
 		var cart = document.getElementById("cart");
@@ -14,7 +15,6 @@ function fetch()
 
 		var link = document.createElement("a");
 		link.setAttribute("href","../html/infoWomenOuterwear.html");
-
 
 		var image = document.createElement("img");
 		image.setAttribute("src",information[0].image);
@@ -70,5 +70,51 @@ function fetch()
 		size.innerHTML = "$64.20";
 		div2.appendChild(size);
 		cart.appendChild(div2);
+
+		cart.setAttribute("id", i);
+		cart.setAttribute("draggable","true");
+		cart.setAttribute("ondragstart",drag(event));
+
+		cart.setAttribute("ondrop",drop(event));
+		cart.setAttribute("ondragover",allowDrop(event));
+
+		var main = document.getElementById("main");
+		main.appendChild(cart);
 	}
+}
+
+function allowDrop(ev) 
+{
+	ev.preventDefault();
+}
+
+function drag(ev)
+{
+	//ev.dataTransfer.setData("text", ev.target.id);
+	//ev.preventDefault();
+	source = ev.currentTarget.id;
+	console.log(source);
+}
+
+function drop(ev) 
+{
+	var ids = JSON.parse(localStorage.getItem("cartIds"));
+	ev.preventDefault();
+	//var data = ev.dataTransfer.getData("text");
+	target = ev.currentTarget.id;
+	console.log(target);
+	for(i=0;i<noOfIds;i++)
+	{
+		if(source == cartIds[i])
+		{
+			cartIds[i] = target;
+		}
+		if(target == cartIds[i])
+		{
+			cartIds[i] = source;
+		}
+	}
+	//for()
+
+	//cart.insertBefore(,app);
 }

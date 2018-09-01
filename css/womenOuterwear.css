@@ -42,7 +42,7 @@ body
 	text-decoration: none;
 	color: black;
 	padding: 8px 16px;
-	font-size: 25px : 
+	font-size: 13px ;
 }
 .women
 {
@@ -85,7 +85,7 @@ body
 .picture
 {
 	width:100%;
-	height:100%;
+	height:70%;
 }
 .item
 {
@@ -95,10 +95,18 @@ body
 .cost
 {
 	color: grey;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
 }
 .description
 {
 	margin-top: 60px;
+	font-weight: bold;
+	text-align: center;
+	/*font-size: 100%;
+	font-weight: bold;
+	text-align: center;*/
 }
 footer
 {
@@ -146,7 +154,6 @@ footer
 	.ladies_outerwear
 	{
 		display:none;
-		//visibility: hidden;
 		margin:0;
 	}
 }
