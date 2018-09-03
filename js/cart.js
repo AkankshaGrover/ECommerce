@@ -5,7 +5,10 @@ function fetch()
 	noOfIds = ids.length;
 	for(var i=0; i<noOfIds; i++)
 	{
-		var cart = document.getElementById("cart");
+		//var cart = document.getElementById("cart");
+		var cart = document.createElement("div");
+		cart.setAttribute("class","cart");
+		cart.setAttribute("id",i);
 
 		var div1 = document.createElement("div");
 		div1.setAttribute("class","div1");
@@ -71,12 +74,12 @@ function fetch()
 		div2.appendChild(size);
 		cart.appendChild(div2);
 
-		cart.setAttribute("id", i);
+		//cart.setAttribute("id", i);
 		cart.setAttribute("draggable","true");
-		cart.setAttribute("ondragstart",drag(event));
+		cart.setAttribute("ondragstart","drag(event)");
 
-		cart.setAttribute("ondrop",drop(event));
-		cart.setAttribute("ondragover",allowDrop(event));
+		cart.setAttribute("ondrop","drop(event)");
+		cart.setAttribute("ondragover","allowDrop(event)");
 
 		var main = document.getElementById("main");
 		main.appendChild(cart);
@@ -99,22 +102,40 @@ function drag(ev)
 function drop(ev) 
 {
 	var ids = JSON.parse(localStorage.getItem("cartIds"));
+
 	ev.preventDefault();
 	//var data = ev.dataTransfer.getData("text");
 	target = ev.currentTarget.id;
-	console.log(target);
-	for(i=0;i<noOfIds;i++)
+	//console.log(target);
+	
+	/*for(i=0;i<noOfIds;i++)
 	{
-		if(source == cartIds[i])
+		if(source == ids[i])
 		{
-			cartIds[i] = target;
+			ids[i] = target;
 		}
-		if(target == cartIds[i])
+		if(target == ids[i])
 		{
-			cartIds[i] = source;
+			ids[i] = source;
 		}
-	}
-	//for()
+	}*/
 
-	//cart.insertBefore(,app);
+	var temp = ids[source];
+	ids[source] = ids[target];
+	ids[target]= temp;
+
+	//console.log(ids);
+
+	var b  = document.getElementById("main");
+	var i = b.childNodes.length - 1;
+	while (i >= 0) 
+	{
+		//console.log(b.childNodes[i]);
+		b.removeChild(b.childNodes[i--]);
+	}	
+	
+	localStorage.setItem("cartIds", JSON.stringify(ids));
+
+
+	fetch();
 }
