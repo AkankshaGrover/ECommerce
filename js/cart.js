@@ -5,7 +5,6 @@ function fetch()
 	noOfIds = ids.length;
 	for(var i=0; i<noOfIds; i++)
 	{
-		//var cart = document.getElementById("cart");
 		var cart = document.createElement("div");
 		cart.setAttribute("class","cart");
 		cart.setAttribute("id",i);
@@ -84,6 +83,10 @@ function fetch()
 		var main = document.getElementById("main");
 		main.appendChild(cart);
 	}
+	var t = document.getElementById("total");
+	var b = document.createElement("b");
+	b.innerHTML = "$" + i*64.20;
+	total.appendChild(b);
 }
 
 function allowDrop(ev) 
@@ -106,7 +109,7 @@ function drop(ev)
 	ev.preventDefault();
 	//var data = ev.dataTransfer.getData("text");
 	target = ev.currentTarget.id;
-	//console.log(target);
+	console.log(target);
 	
 	/*for(i=0;i<noOfIds;i++)
 	{
@@ -130,7 +133,6 @@ function drop(ev)
 	var i = b.childNodes.length - 1;
 	while (i >= 0) 
 	{
-		//console.log(b.childNodes[i]);
 		b.removeChild(b.childNodes[i--]);
 	}	
 	
