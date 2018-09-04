@@ -1,23 +1,51 @@
 var information = [
-	{	"id": 1,
+	/*{	"id": 1,
 		"image":"../image/infoWomenOuterwear.jpg",
 		"description":"Ladies Yerba Knit Quarter Zip",
 		"cost": "$64.20",	
-		"description": "This on-trend quarter zip doubles as workout gear.",
+		"desc": "This on-trend quarter zip doubles as workout gear.",
 	},
 	{
 		"id": 2,
 		"image":"../image/infoWomenOuterwear.jpg",
 		"description":"Ladies Yerba Knit Quarter Zip",
 		"cost": "$64.20",	
-		"description": "This on-trend quarter zip doubles as workout gear.",
+		"desc": "This on-trend quarter zip doubles as workout gear.",
 	},
 	{
 		"id": 3,
 		"image":"../image/infoWomenOuterwear.jpg",
 		"description":"Ladies Yerba Knit Quarter Zip",
 		"cost": "$64.20",	
-		"description": "This on-trend quarter zip doubles as workout gear.",
+		"desc": "This on-trend quarter zip doubles as workout gear.",
+	}*/
+	{
+		"id": 1,
+		"image": "../image/outerwearMen1.jpg",
+		"description": "Green Flex Fleece Zip Hoodie",
+		"cost": "$45.65",
+		"desc": "This on-trend quarter zip doubles as workout gear.",
+	},
+	{
+		"id": 2,
+		"image": "../image/tshirtMen.jpg",
+		"description": "Organic Cotton Android walking with dog T-shirt",
+		"cost": "$17.25",
+		"desc": "This on-trend quarter zip doubles as workout gear.",
+	},
+	{
+		"id": 3,
+		"image": "../image/outerwearWomen.jpg",
+		"description": "Ladies Yerba Knit Quarter Zip",
+		"cost": "$64.20",
+		"desc": "This on-trend quarter zip doubles as workout gear.",
+	},
+	{
+		"id": 4,
+		"image": "../image/tshirtWomen.jpg",
+		"description": "Ladies Not For Sale T-Shirt",
+		"cost": "$24.00",
+		"desc": "This on-trend quarter zip doubles as workout gear.",
 	}
 		/*{
 			"id": 1,

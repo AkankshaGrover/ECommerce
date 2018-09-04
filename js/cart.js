@@ -19,7 +19,7 @@ function fetch()
 		link.setAttribute("href","../html/infoWomenOuterwear.html");
 
 		var image = document.createElement("img");
-		image.setAttribute("src",information[0].image);
+		image.setAttribute("src",information[ids[i]].image);
 		image.setAttribute("class","pic");
 
 		link.appendChild(image);
@@ -30,7 +30,7 @@ function fetch()
 		var link2 = document.createElement("a");
 		link2.setAttribute("href","../html/infoWomenOuterwear.html");
 		link2.setAttribute("class","line");
-		link2.innerHTML = "Ladies Yerba knit quarter Zip";
+		link2.innerHTML = information[ids[i]].description;
 		desc.appendChild(link2);
 		div1.appendChild(desc);
 
@@ -69,7 +69,7 @@ function fetch()
 		div2.appendChild(size);
 
 		var cost = document.createElement("div");
-		size.innerHTML = "$64.20";
+		size.innerHTML = information[ids[i]].cost;
 		div2.appendChild(size);
 		cart.appendChild(div2);
 

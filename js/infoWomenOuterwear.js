@@ -34,7 +34,7 @@ function fun()
 	div2.appendChild(bold);
 	var para = document.createElement("p");
 	para.setAttribute("class","desc2");
-	para.innerHTML = information[0].description;
+	para.innerHTML = information[0].desc;
 	div2.appendChild(para);
 	var para2 = document.createElement("p");
 	para2.innerHTML = "Features: ";
@@ -97,6 +97,50 @@ function send()
 	document.location.href = link;
 	//save();
 }
+/*function save()
+{
+	var url = window.location.href,
+	params = url.split('?')[1].split('&'),
+	data = {}, temp;
+	for(var i=0; i<params.length; i++)
+	{
+		tmp =params[i].split('=');
+		data[tmp[0]] = tmp[1];
+	}
+	var x = data["id"];
+	var list = JSON.parse(localStorage.getItem("information"));
+	if(list==null)
+	{
+		list = [];
+	}
+	list.push(x);
+	localStorage.setItem("id",JSON.stringify(list));
+	retrieve();
+}*/
+
+/*function retrieve()
+{
+	var ids = JSON.parse(localStorage.getItem("information"));
+	//var noOfIds = ids.length;
+	for(var i=0; i<ids.length; i++)
+	{
+		var di = document.getElementById("image");
+		var 
+		tmp = params[i].split('=');
+		data[tmp[0]] = tmp[1];
+	}
+	/*document.location.href="../html/cart.html";
+	var url = document.location.href,
+	params = url.split('?')[1].split('&'),
+	data = {}, temp;
+	for(var i=0; i<params.length; i++)
+	{
+		tmp =params[i].split('=');
+		data[tmp[0]] = tmp[1];
+	}
+	var x = JSON.parse(localStorage.getItem(list));
+
+}*/
 
 
 
