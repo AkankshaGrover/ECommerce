@@ -1,4 +1,4 @@
-function fun()
+function fun(information)
 {
 	var i;
 	var desc = document.getElementById("desc");      //outer div
@@ -7,7 +7,7 @@ function fun()
 	var image = document.createElement("div");       
 	image.setAttribute("class","image");
 	var link = document.createElement("img");
-	link.setAttribute("src", information[0].image);
+	link.setAttribute("src", information.image);
 	link.setAttribute("class","pic");
 	var id = document.getElementById("info");
 
@@ -20,9 +20,9 @@ function fun()
 	var item = document.createElement("p");
 	var cost = document.createElement("p");
 	item.setAttribute("class","item");
-	item.innerHTML = information[0].description;
+	item.innerHTML = information.description;
 	cost.setAttribute("class","cost");
-	cost.innerHTML = information[0].cost;
+	cost.innerHTML = information.cost;
 	div.appendChild(item);
 	div.appendChild(cost);
 	id.prepend(div);
@@ -34,7 +34,7 @@ function fun()
 	div2.appendChild(bold);
 	var para = document.createElement("p");
 	para.setAttribute("class","desc2");
-	para.innerHTML = information[0].desc;
+	para.innerHTML = information.desc;
 	div2.appendChild(para);
 	var para2 = document.createElement("p");
 	para2.innerHTML = "Features: ";
@@ -67,7 +67,6 @@ function fun()
 	id.insertBefore(div2,button);
 
 
-
 //	localStorage.setItem("id",information[0].id);         //storing id of data
 }
 
@@ -75,72 +74,64 @@ function send()
 {
 
 	//debugger;
+	var i;
 	var url = window.location.href;
 	var vars ={};
 	var hashes = url.split('?')[1];
 	var hash = hashes.split('&');
-	for(var i=0; i<hash.length; i++)
+	for(i=0; i<hash.length; i++)
 	{
 		params=hash[i].split("=");
 		vars[params[0]]=params[1];
 	}
+	
 	var x = vars["id"];
-
+	
 	var link = "../html/cart.html?" + x;
-	var list = JSON.parse(localStorage.getItem("cartIds"));
+
+	/*var items = JSON.parse(localStorage.getItem("cartIds"));
+	if (items == null) {
+		items = [];
+	}
+	var  a = {
+		"id":vars["id"],
+		"qty": JSON.parse(document.getElementById("list").options[document.getElementById("list").selectedIndex].value)
+	}
+	/*var list = JSON.parse(localStorage.getItem("cartIds"));
 	if(list==null)
 	{
 		list = [];
 	}
 	list.push(x);
-	localStorage.setItem("cartIds",JSON.stringify(list));
+	localStorage.setItem("cartIds",JSON.stringify(list));*/
+	items.push(a);
+	localStorage.setItem("cartIds",JSON.stringify(items));
+
 	document.location.href = link;
 	//save();
 }
-/*function save()
-{
-	var url = window.location.href,
-	params = url.split('?')[1].split('&'),
-	data = {}, temp;
-	for(var i=0; i<params.length; i++)
-	{
-		tmp =params[i].split('=');
-		data[tmp[0]] = tmp[1];
-	}
-	var x = data["id"];
-	var list = JSON.parse(localStorage.getItem("information"));
-	if(list==null)
-	{
-		list = [];
-	}
-	list.push(x);
-	localStorage.setItem("id",JSON.stringify(list));
-	retrieve();
-}*/
 
-/*function retrieve()
+function fn()
 {
-	var ids = JSON.parse(localStorage.getItem("information"));
-	//var noOfIds = ids.length;
-	for(var i=0; i<ids.length; i++)
-	{
-		var di = document.getElementById("image");
-		var 
-		tmp = params[i].split('=');
-		data[tmp[0]] = tmp[1];
+	var url = window.location.href;
+	var vars = {};
+	var hashes = url.split('?')[1];
+	var hash = hashes.split('&');
+	for (i = 0; i < hash.length; i++) {
+		params = hash[i].split("=");
+		vars[params[0]] = params[1];
 	}
-	/*document.location.href="../html/cart.html";
-	var url = document.location.href,
-	params = url.split('?')[1].split('&'),
-	data = {}, temp;
-	for(var i=0; i<params.length; i++)
-	{
-		tmp =params[i].split('=');
-		data[tmp[0]] = tmp[1];
-	}
-	var x = JSON.parse(localStorage.getItem(list));
 
-}*/
+	var x = vars["id"];
+	link = "http://localhost:3000/" + x;
+
+	fetch(link).then((res) => res.json())
+
+		.then(function (info)
+		{
+			fun(info);
+		});
+}
 
 
 

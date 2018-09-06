@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-akanksha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/mountblue/aug-b6-ja/ecommerce-akanksha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "*",
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "node-fetch": "^2.2.0",
+    "upper-case": "^1.1.3"
+  }
+}

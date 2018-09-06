@@ -118,7 +118,8 @@ body
 footer
 {
 	width: 99%;
-	bottom:0;
+	bottom:0px;
+	position:absolute;
 }
 .foot
 {

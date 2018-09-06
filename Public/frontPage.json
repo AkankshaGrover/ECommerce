@@ -1,0 +1,28 @@
+var info=[
+		{
+	    	"id" : "menOuterwear",
+	    	"name" : " menOuterwear",
+	    	"poster" : "../image/mens_outerwear.jpg",
+	    	"link" : "../html/mensOuterwear.html",
+	    	"class" : "mens_outerwear",
+	    	"alt" : "mens_outerwear"
+	    },
+	    {
+	    	"id" : "womenOuterwear",
+	    	"name" : " womenOuterwear",
+	    	"poster" : "../image/ladies_outerwear.jpg",
+	    	"link" : "../html/womenOuterwear.html",
+	    	"class" : "ladies_outerwear",
+	    	"alt" : "ladies_outerwear"
+	    },
+	    {
+	    	"id" : "menTshirt",
+	    	"name" : " menTshirt",
+	    	"poster" : "../image/mens_tshirts.jpg"
+	    },
+	    {
+	    	"id" : "womenTshirt",
+	    	"name" : " womenTshirt",
+	    	"poster" : "../image/ladies_tshirts.jpg"
+	    }
+	  ];

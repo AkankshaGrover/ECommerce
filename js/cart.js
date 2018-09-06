@@ -1,9 +1,28 @@
 var noOfIds, source, target ;
 function fetch()
 {
-	var ids = JSON.parse(localStorage.getItem("cartIds"));
-	noOfIds = ids.length;
-	for(var i=0; i<noOfIds; i++)
+	var total=0;
+	//var ids = JSON.parse(localStorage.getItem("cartIds"));
+	//noOfIds = ids.length;
+	/*var url = window.location.href;
+	var vars = {};
+	var hashes = url.split('?')[1];
+	var hash = hashes.split('&');
+	for (i = 0; i < hash.length; i++) {
+		params = hash[i].split("=");
+		vars[params[0]] = params[1];
+	}
+	var x = vars["id"];*/
+	var ids = [];
+	var qty = [];
+	var array = JSON.parse(localStorage.getItem("cartIds"));
+	for(var i=0;i<array.length;i++)
+	{
+		ids.push(JSON.parse(array[i]));
+		qty.push(array[i]);
+	}
+	
+	for(var i=0; i<array.length; i++)
 	{
 		var cart = document.createElement("div");
 		cart.setAttribute("class","cart");
@@ -19,7 +38,8 @@ function fetch()
 		link.setAttribute("href","../html/infoWomenOuterwear.html");
 
 		var image = document.createElement("img");
-		image.setAttribute("src",information[ids[i]].image);
+	//	image.setAttribute("src", information[ids[i]-1].image);
+		image.setAttribute("src", information[ids[i]-1].image);
 		image.setAttribute("class","pic");
 
 		link.appendChild(image);
@@ -30,7 +50,7 @@ function fetch()
 		var link2 = document.createElement("a");
 		link2.setAttribute("href","../html/infoWomenOuterwear.html");
 		link2.setAttribute("class","line");
-		link2.innerHTML = information[ids[i]].description;
+		link2.innerHTML = information[ids[i] -1].description;
 		desc.appendChild(link2);
 		div1.appendChild(desc);
 
@@ -40,7 +60,7 @@ function fetch()
 		div2.setAttribute("class","div2");
 
 		var info = document.createElement("div");
-		info.innerHTML= "Qty: &nbsp";
+		info.innerHTML= "Qty:   ";
 
 		var select = document.createElement("select");
 		select.setAttribute("class","quant");
@@ -69,11 +89,11 @@ function fetch()
 		div2.appendChild(size);
 
 		var cost = document.createElement("div");
-		size.innerHTML = information[ids[i]].cost;
-		div2.appendChild(size);
+		cost.innerHTML = '$' + information[ids[i]-1].cost;
+		total = JSON.parse(information[ids[i]-1].cost) + total;
+		div2.appendChild(cost);
 		cart.appendChild(div2);
 
-		//cart.setAttribute("id", i);
 		cart.setAttribute("draggable","true");
 		cart.setAttribute("ondragstart","drag(event)");
 
@@ -85,8 +105,8 @@ function fetch()
 	}
 	var t = document.getElementById("total");
 	var b = document.createElement("b");
-	b.innerHTML = "$" + i*64.20;
-	total.appendChild(b);
+	b.innerHTML = '$' + total;
+	t.appendChild(b);
 }
 
 function allowDrop(ev) 
@@ -96,8 +116,6 @@ function allowDrop(ev)
 
 function drag(ev)
 {
-	//ev.dataTransfer.setData("text", ev.target.id);
-	//ev.preventDefault();
 	source = ev.currentTarget.id;
 	console.log(source);
 }
@@ -107,22 +125,9 @@ function drop(ev)
 	var ids = JSON.parse(localStorage.getItem("cartIds"));
 
 	ev.preventDefault();
-	//var data = ev.dataTransfer.getData("text");
 	target = ev.currentTarget.id;
 	console.log(target);
 	
-	/*for(i=0;i<noOfIds;i++)
-	{
-		if(source == ids[i])
-		{
-			ids[i] = target;
-		}
-		if(target == ids[i])
-		{
-			ids[i] = source;
-		}
-	}*/
-
 	var temp = ids[source];
 	ids[source] = ids[target];
 	ids[target]= temp;

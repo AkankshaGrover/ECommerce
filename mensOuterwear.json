@@ -1,0 +1,29 @@
+[{
+	"id": 1,
+	"link1": "./infoWomenOuterwear.html?id=",
+	"posterImg" : "./outerwearMen1.jpg",
+	"description" : "Green Flex Fleece Zip Hoodie",
+	"cost" : "$45.65"
+	},
+	{
+		"id": 2,
+		"link1": "./infoWomenOuterwear.html?id=",
+		"posterImg": "./image/tshirtMen.jpg",
+		"description": "Organic Cotton Android walking with dog T-shirt",
+		"cost": "$17.25"
+	},
+	{
+		"id": 3,
+		"link1": "./infoWomenOuterwear.html?id=",
+		"posterImg": "./image/outerwearWomen.jpg",
+		"description": "Ladies Yerba Knit Quarter Zip",
+		"cost": "$64.20"
+	},
+	{
+		"id": 4,
+		"link1": "./infoWomenOuterwear.html?id=",
+		"posterImg": "./image/tshirtWomen.jpg",
+		"description": "Ladies Not For Sale T-Shirt",
+		"cost": "$24.00"
+	}
+]

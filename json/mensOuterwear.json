@@ -1,7 +1,7 @@
 var info = [{
 	"id": 1,
 	"link1": "../html/infoWomenOuterwear.html?id=",
-	"posterImg" : "../image/outerwearMen1.jpg",
+	"posterImg" : "../image/outerwearMen.jpg",
 	"description" : "Green Flex Fleece Zip Hoodie",
 	"cost" : "$45.65",
 	},
